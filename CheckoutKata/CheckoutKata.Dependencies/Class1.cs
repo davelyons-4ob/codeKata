@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CheckoutKata.Dependencies
+﻿namespace CheckoutKata.Dependencies
 {
     public class Class1
     {

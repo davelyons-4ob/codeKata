@@ -4,5 +4,10 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CheckoutKata.Business.Interfaces\CheckoutKata.Business.Interfaces.csproj" />
+      <ProjectReference Include="..\CheckoutKata.Common\CheckoutKata.Common.csproj" />
+    </ItemGroup>
+
 
 </Project>
