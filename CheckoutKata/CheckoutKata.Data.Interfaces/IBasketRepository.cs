@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using CheckoutKata.Entities;
 
@@ -6,10 +6,10 @@ namespace CheckoutKata.Data.Interfaces
 {
     public interface IBasketRepository
     {
-        Task AddItemToBasket();
+        Task AddItemToBasket(BasketItem basketItem);
 
         Task ClearBasket();
 
-        Task<IQueryable<BasketItem>> GetBasket();
+        Task<List<BasketItem>> GetBasket();
     }
 }

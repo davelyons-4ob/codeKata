@@ -1,3 +1,4 @@
+using CheckoutKata.Dependencies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +20,9 @@ namespace CheckoutKata.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddBusinessDependencies();
+            services.AddDataDependencies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

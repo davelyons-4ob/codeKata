@@ -8,12 +8,11 @@ namespace CheckoutKata.Entities
     public class BasketItem
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]     
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid BasketItemId { get; set; }
 
         public Guid ProductId { get; set; }
-        
-        [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+
+        [ForeignKey("ProductId")] public Product Product { get; set; }
     }
 }

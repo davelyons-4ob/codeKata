@@ -10,6 +10,7 @@ namespace CheckoutKata.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid ProductId { get; set; }
+
         public string SKU { get; set; }
         public decimal Price { get; set; }
     }

@@ -7,6 +7,7 @@
     <ItemGroup>
       <ProjectReference Include="..\CheckoutKata.Business.Interfaces\CheckoutKata.Business.Interfaces.csproj" />
       <ProjectReference Include="..\CheckoutKata.Common\CheckoutKata.Common.csproj" />
+      <ProjectReference Include="..\CheckoutKata.Dependencies\CheckoutKata.Dependencies.csproj" />
     </ItemGroup>
 
 
