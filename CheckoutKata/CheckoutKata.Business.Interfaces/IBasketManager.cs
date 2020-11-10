@@ -6,6 +6,6 @@ namespace CheckoutKata.Business.Interfaces
     public interface IBasketManager
     {
         Task AddItemToBasket(string sku);
-        Task<BasketItemModel> GetCurrentBasket();
+        Task<BasketModel> GetCurrentBasket();
     }
 }

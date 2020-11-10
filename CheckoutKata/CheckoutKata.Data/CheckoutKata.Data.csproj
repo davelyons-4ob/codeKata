@@ -9,6 +9,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\CheckoutKata.Data.Interfaces\CheckoutKata.Data.Interfaces.csproj" />
       <ProjectReference Include="..\CheckoutKata.Entities\CheckoutKata.Entities.csproj" />
     </ItemGroup>
 

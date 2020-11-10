@@ -11,7 +11,7 @@ namespace CheckoutKata.Business
             throw new System.NotImplementedException();
         }
 
-        public Task<BasketItemModel> GetCurrentBasket()
+        public Task<BasketModel> GetCurrentBasket()
         {
             throw new System.NotImplementedException();
         }

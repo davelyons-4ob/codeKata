@@ -4,4 +4,8 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CheckoutKata.Entities\CheckoutKata.Entities.csproj" />
+    </ItemGroup>
+
 </Project>

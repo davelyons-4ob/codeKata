@@ -13,6 +13,7 @@ namespace CheckoutKata.Data
 
         public DbSet<Product> Product { get; set; }
         public DbSet<SpecialOffer> SpecialOffers { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
 
         private void LoadProducts()
         {
