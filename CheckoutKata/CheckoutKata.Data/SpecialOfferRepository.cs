@@ -9,7 +9,7 @@ namespace CheckoutKata.Data
 {
     public class SpecialOfferRepository : BaseRepository, ISpecialOfferRepository
     {
-        protected SpecialOfferRepository(CheckoutKataContext db) : base(db)
+        public SpecialOfferRepository(CheckoutKataContext db) : base(db)
         {
         }
 

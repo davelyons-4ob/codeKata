@@ -1,5 +1,6 @@
 using CheckoutKata.Data;
 using CheckoutKata.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CheckoutKata.Dependencies
@@ -11,6 +12,10 @@ namespace CheckoutKata.Dependencies
             service.AddScoped<IBasketRepository, BasketRepository>();
             service.AddScoped<IProductRepository, ProductRepository>();
             service.AddScoped<ISpecialOfferRepository, SpecialOfferRepository>();
+            service.AddDbContext<CheckoutKataContext>(options =>
+            {
+                options.UseInMemoryDatabase("theDatabase");
+            });
         }
     }
 }

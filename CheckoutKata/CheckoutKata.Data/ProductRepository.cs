@@ -8,7 +8,7 @@ namespace CheckoutKata.Data
 {
     public class ProductRepository : BaseRepository, IProductRepository
     {
-        protected ProductRepository(CheckoutKataContext db) : base(db)
+        public ProductRepository(CheckoutKataContext db) : base(db)
         {
         }
 

@@ -3,6 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using CheckoutKata.Business.Interfaces;
 using CheckoutKata.Common.Exceptions;
+using CheckoutKata.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -22,11 +23,11 @@ namespace CheckoutKata.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddItemToBasket(string sku)
+        public async Task<IActionResult> AddItemToBasket(AddToBasketModel model)
         {
             try
             {
-                await _basketManager.AddItemToBasket(sku);
+                await _basketManager.AddItemToBasket(model.SKU);
 
                 return Ok();
             }
